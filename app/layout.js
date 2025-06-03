@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <link rel="icon" href="/black.png" type="image/svg+xml" />
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       
       <head>
         {/* fontawesome cdn link */}
