@@ -12,7 +12,7 @@ import Link from "next/link";
 // Updated fetch function with limit
 const fetchDataHandler = async (limit) => {
   try {
-    const response = await axios.get(`http://localhost:3000/api/properties/public_routes/fetch_limited?page=${limit}`);
+    const response = await axios.get(`/api/properties/public_routes/fetch_limited?page=${limit}`);
     return response?.data;
   } catch (error) {
     console.log(error?.response?.data?.message || error?.message);
