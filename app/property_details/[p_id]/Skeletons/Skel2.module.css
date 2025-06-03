@@ -1,0 +1,14 @@
+.lgImgSkCont
+{
+    height: 400px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgb(205, 205, 205);
+    animation: pulse 1.5s infinite ease-in-out;
+}
+@keyframes pulse
+{
+    0% { opacity: 1;}
+    50% { opacity: 0.4;}
+    100% { opacity: 1;}
+}

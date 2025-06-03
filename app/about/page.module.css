@@ -1,0 +1,33 @@
+.aboutPage {
+    padding: 80px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a1a;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  .text {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.8;
+  }
+  
+  .image {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    max-height: 380px;
+    margin-bottom: 10px;
+  }
+  

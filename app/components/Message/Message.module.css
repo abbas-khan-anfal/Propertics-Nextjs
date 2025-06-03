@@ -1,0 +1,11 @@
+.message
+{
+    border: 1px solid var(--primary-color);
+    font-size: 17px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--primary-color);
+}

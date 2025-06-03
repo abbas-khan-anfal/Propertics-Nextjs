@@ -1,0 +1,12 @@
+
+
+.searchBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBox .searchBtn
+{
+    padding: 8px 15px;
+}

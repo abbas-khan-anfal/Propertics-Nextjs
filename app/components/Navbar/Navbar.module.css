@@ -1,0 +1,203 @@
+.navbar
+{
+    height: 60px;
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom: 1px solid var(--light-grey-color);
+}
+.navbar .logoImg
+{
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+.navbar .navUl
+{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar .navLi
+{
+    display: inline-block;
+    list-style-type: none;
+}
+.navbar .navLink
+{
+    color : var(--black-color);
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s;
+    background-color: transparent;
+    margin: 0px 5px;
+    border-radius: 2px;
+}
+.navbar .navLink:hover
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.navbar .navLink.active
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+
+
+.navbar .divider
+{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 5px 0px 0px;
+}
+.navbar .listBtn
+{
+    background-color: var(--black-color);
+    border: 2px solid var(--black-color);
+    font-size: 17px;
+    font-weight: 500;
+}
+.navbar .listBtn:hover
+{
+    background-color: var(--white-color);
+    border: 2px solid var(--black-color);
+    color: var(--black-color);
+}
+.navbar .hRole
+{
+    display: none;
+}
+.navOpenBtn,.navCloseBtn
+{
+    display: none;
+}
+.navOpenBtn
+{
+    margin: 0px 5px 0px 0px;
+}
+.navCloseBtn
+{
+    margin: 15px 0px 20px 10px;
+}
+.navBgLayer
+{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(59, 59, 59, 0.3);
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+
+@media (max-width:992px)
+{
+    .navbar .navUl
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: var(--black-color);
+        height: 100vh;
+        bottom: 0;
+        top: 0;
+        padding: 5px 10px;
+        transition: all 0.4s;
+        z-index: 1000;
+    }
+    .navbar .navUl.show
+    {
+        left: 0;
+    }
+    .navbar .navLi
+    {
+        display: block;
+    }
+    .navbar .navLink
+    {
+        display: block;
+        color: var(--white-color);
+        margin: 0px;
+    }
+    .navbar .listBtn
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 8px 15px;
+        background-color: transparent;
+        color: var(--white-color);
+        border: 2px solid var(--white-color);
+        font-weight: 600;
+
+    }
+    .navbar .listBtn:hover
+    {
+        display: block;
+        width: 100%;
+        padding: 8px 15px;
+        background-color: var(--white-color);
+        color: var(--black-color);
+        border: 2px solid var(--white-color);
+    }
+    .navbar .divider
+    {
+        display: none;
+    }.navbar .hRole
+    {
+        display: block;
+        color: white;
+    }
+
+    .navOpenBtn,.navCloseBtn
+    {
+        display: inline-block;
+    }
+    .navBgLayer
+    {
+        z-index: 999;
+    }
+    .navBgLayer.show
+    {
+        display: block;
+    }
+}
+
+/* mobile media query */
+@media only screen and (min-width: 200px) and (max-width: 567px)
+{
+    .navbar .logoImg
+    {
+        width: 105px;
+        height: 35px;
+    }
+    .navbar .navUl
+    {
+        width: 80%;
+    }
+}
+
+/* tablet media query */
+@media only screen and (min-width: 568px) and (max-width: 992px)
+{
+    .navbar .logoImg
+    {
+        width: 130px;
+        height: 40px;
+    }
+    .navbar .navUl
+    {
+        width: 40%;
+    }
+}

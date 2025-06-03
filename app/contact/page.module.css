@@ -1,0 +1,32 @@
+.contactPage {
+    padding: 80px 0px;
+    color: #1a1a1a;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .form {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 2px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
+  }
+  
+  .button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  
+  .image {
+    border-radius: 2px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  

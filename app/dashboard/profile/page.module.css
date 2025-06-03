@@ -1,0 +1,12 @@
+.profilePage
+{
+    padding-top: 30px;
+}
+.profileImg
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 5px solid var(--primary-color);
+}

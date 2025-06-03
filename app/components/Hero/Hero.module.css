@@ -1,0 +1,38 @@
+
+/* section 1 */
+.heroTextSec
+{
+    padding-top: 100px;
+    margin-bottom: 10px;
+}
+.heroTextSec .heroTitle
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+.heroTextSec .heroTitle span
+{
+    color: var(--primary-color);
+}
+
+/* section 2 */
+.heroImageSec .heroImg
+{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 567px)
+{
+    .heroTextSec
+    {
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 568px) and (max-width: 992px)
+{
+    
+}

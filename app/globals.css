@@ -1,0 +1,149 @@
+/* global colors */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* font-family: "Noto Sans", sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root
+{
+    --primary-color : #00655d;
+    --primary-color-tst : #00585178;
+    --primary-color-dark : #005049;
+    --black-color : #1e1e1e;
+    --grey-color : rgb(130, 130, 130);
+    --light-grey-color : rgb(212, 212, 212);
+    --white-color : #ffffff;
+}
+
+
+/* buttons */
+.unBtn
+{
+    border: none;
+    border-radius: 2px;
+    font-size: 17px;
+    font-weight: normal;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.unBtn:hover
+{
+    background-color: var(--primary-color-dark);
+}
+.unBtn:active
+{
+    opacity: 0.8;
+}
+.unBtn:disabled
+{
+    opacity: 0.6;
+}
+.lgBtn
+{
+    width: 100%;
+    padding: 7px 0px;
+    text-align: center;
+}
+.mdBtn
+{
+    padding: 7px 25px;
+    font-size: 16px;
+}
+.smBtn
+{
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+.circleBtn
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: var(--light-grey-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    transition: all 0.3s;
+    font-size: 18px;
+}
+.circleBtn:active
+{
+    opacity: 0.6;
+}
+.circleBtn:hover
+{
+    background-color: var(--grey-color);
+}
+/* inputs & label */
+.label
+{
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+}
+.inputField
+{
+    border: 1px solid grey;
+    padding: 7px 5px;
+    border-radius: 2px;
+    width: 100%;
+    transition: all 0.3s;
+    outline: 4px solid transparent;
+    font-size: 16px;
+}
+.inputField:focus
+{
+    outline: 4px solid var(--primary-color-tst);
+}
+
+/* headings */
+.h1
+{
+    font-size: 40px !important;
+}
+.h2
+{
+    font-size: 30px !important;
+}
+.h3
+{
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+    color: var(--black-color) !important;
+}
+.h4
+{
+    font-size: 20px !important;
+}
+.h5
+{
+    font-size: 18px !important;
+}
+
+/* auth page link text */
+.authPage
+{
+    padding-top: 30px;
+}
+.authLinkText
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+.authLinkText .a
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}

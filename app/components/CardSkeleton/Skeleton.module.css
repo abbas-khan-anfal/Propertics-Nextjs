@@ -1,0 +1,17 @@
+.skeletonImg, .skeletonTitle, .skeletonText, .skeletonLocation, .skeletonBtn {
+  background: #e0e0e0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeletonImg { height: 200px; width: 100%; }
+.skeletonTitle { height: 20px; width: 60%; margin: 10px 0; }
+.skeletonText { height: 15px; width: 90%; margin-bottom: 10px; }
+.skeletonLocation { height: 15px; width: 50%; margin-bottom: 10px; }
+.skeletonBtn { height: 30px; width: 100px; }
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}

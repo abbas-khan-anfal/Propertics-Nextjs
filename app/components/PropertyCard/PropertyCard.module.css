@@ -1,0 +1,48 @@
+.propCardBox
+{
+    padding: 10px;
+    border: 2px solid var(--light-grey-color) !important;
+    border-radius: 2px !important;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.propCardBox:hover
+{
+    border-color: var(--black-color) !important;
+}
+
+
+/* section 1 */
+.propCardBox .propCardSec1
+{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.propCardBox .propCardImg
+{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* section 2 */
+.propCardBox .propCardSec2
+{
+    padding: 10px;
+}
+.propCardBox .propCardTitle
+{
+    margin-bottom: 10px;
+}
+.propCardBox .propCardDesc
+{
+    margin-bottom: 15px;
+}
+.propCardBox .propLocation
+{
+    margin-bottom: 10px;
+    font-size: 15px !important;
+}
