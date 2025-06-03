@@ -45,14 +45,14 @@ const Footer = () => {
 
           <div className={`col-lg-4 col-md-12 ${styles.col3}`}>
             <h5 className={styles.title}>NEWLETTER</h5>
-            <p className={styles.description}>Be the first to know about new arrivals, look books, sales & promos!</p>
+            <p className={styles.description}>Be the first to know about new arrivals, look properties, sales & promos!</p>
             <div className="form-group">
               <input type="email" placeholder="Your email" className={styles.input} />
             </div>
           </div>
 
           <div className={`col-12 ${styles.col4}`}>
-            <p>&copy; 2024 All rights reserved | This template is made with ❤️ by Colorlib</p>
+            <p>&copy; 2024 All rights reserved | This template is made with ❤️ by Abbas Khan &#40;anfal&#41; </p>
           </div>
 
         </div>
