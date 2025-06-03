@@ -43,7 +43,7 @@ function page() {
           toast.error("Invalid property id");
           return;
         }
-        if(!confirm("Are you sure you want to delete this property?")) return;
+        // if(!confirm("Are you sure you want to delete this property?")) return;
 
         try
         {

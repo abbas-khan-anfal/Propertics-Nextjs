@@ -42,7 +42,7 @@ function page() {
           toast.error("Invalid message id");
           return;
         }
-        if(!confirm("Are you sure you want to delete this message?")) return;
+        // if(!confirm("Are you sure you want to delete this message?")) return;
 
         try
         {
