@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
-import contactImg from '@/app/assets/room.jpg'; // place your image in public/images
+import notFoundImg from '@/app/assets/not-found.png'; // place your image in public/images
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import Title from '../components/Title/Title';
@@ -101,7 +101,7 @@ const ContactPage = () => {
         {/* Right Image Section */}
         <div className="col-lg-6 col-md-12 col-sm-12 mt-3">
           <Image
-            src={contactImg}
+            src={notFoundImg}
             alt="Contact Us"
             className={`img-fluid ${styles.image}`}
           />

@@ -1,8 +1,6 @@
 import styles from './page.module.css';
 import Image from 'next/image';
-import teamImg from '@/app/assets/room.jpg';
-import missionImg from '@/app/assets/room.jpg';
-import visionImg from '@/app/assets/room.jpg';
+import notFoundImg from '@/app/assets/not-found.png'; // place your image in public/images
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import Title from '../components/Title/Title';
@@ -23,7 +21,7 @@ const AboutPage = () => {
 
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
-          <Image src={missionImg} alt="Our Mission" className={`img-fluid ${styles.image}`} />
+          <Image src={notFoundImg} alt="Our Mission" className={`img-fluid ${styles.image}`} />
         </div>
         <div className="col-md-6">
           <h2 className={styles.heading}>Our Mission</h2>
@@ -35,7 +33,7 @@ const AboutPage = () => {
 
       <div className="row align-items-center flex-md-row-reverse mb-5">
         <div className="col-md-6">
-          <Image src={visionImg} alt="Our Vision" className={`img-fluid ${styles.image}`} />
+          <Image src={notFoundImg} alt="Our Vision" className={`img-fluid ${styles.image}`} />
         </div>
         <div className="col-md-6">
           <h2 className={styles.heading}>Our Vision</h2>
@@ -47,7 +45,7 @@ const AboutPage = () => {
 
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
-          <Image src={teamImg} alt="Our Team" className={`img-fluid ${styles.image}`} />
+          <Image src={notFoundImg} alt="Our Team" className={`img-fluid ${styles.image}`} />
         </div>
         <div className="col-md-6">
           <h2 className={styles.heading}>Our Team</h2>
