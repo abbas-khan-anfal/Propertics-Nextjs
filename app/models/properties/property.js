@@ -21,6 +21,10 @@ const propertySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  contact: {
+    type: String,
+    required: true,
+  },
   img_paths : {
     type: [String],
     required: true,

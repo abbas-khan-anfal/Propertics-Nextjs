@@ -29,6 +29,7 @@ export async function POST(req){
         const price = formData.get('price');
         const locationName = formData.get('location_name');
         const locationUrl = formData.get('location_url');
+        const contact = formData.get('contact');
 
         // check files length
         if(files.length > 5)
@@ -67,7 +68,7 @@ export async function POST(req){
         }
 
         // check empty with trim
-        if(title.trim() === "" || description.trim() === "" || price.trim() === "" || locationName.trim() === "" || locationUrl.trim() === "")
+        if(title.trim() === "" || description.trim() === "" || price.trim() === "" || locationName.trim() === "" || locationUrl.trim() === "" || contact.trim() === "")
         {
             throw new Error("All fields are required");
         }
@@ -78,6 +79,7 @@ export async function POST(req){
             price,
             location_name : locationName,
             location_url : locationUrl,
+            contact,
             img_paths : imgPaths,
             img_pub_ids : imgPubIds,
             user : userId
@@ -153,8 +155,9 @@ export async function PUT(req){
         const price = formData.get('price');
         const locationName = formData.get('location_name');
         const locationUrl = formData.get('location_url');
+        const contact = formData.get('contact');
 
-        if(title.trim() === "" || description.trim() === "" || price.trim() === "" || locationName.trim() === "" || locationUrl.trim() === "")
+        if(title.trim() === "" || description.trim() === "" || price.trim() === "" || locationName.trim() === "" || locationUrl.trim() === "" || contact.trim() === "")
         {
             return res.json({
                 success : false,
@@ -199,6 +202,10 @@ export async function PUT(req){
         if(locationUrl && locationUrl !== property.location_url)
         {
             property.location_url = locationUrl;
+        }
+        if(contact && contact !== property.contact)
+        {
+            property.contact = contact;
         }
 
         if(files.length > 0)

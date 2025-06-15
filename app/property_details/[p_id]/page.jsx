@@ -140,6 +140,12 @@ function page() {
                                 </Link>
 
                             </div>
+
+                            <div className="mb-4">
+                                <h6 className={Styles.smallTitle}>Contact:</h6>
+                                <span className={Styles.text}>{property?.contact}</span>
+                            </div>
+
                             <div className="mb-4">
                                 <h6 className={Styles.smallTitle}>Property Price:</h6>
                                 <span className={Styles.text}>Rs : {property?.price}</span>

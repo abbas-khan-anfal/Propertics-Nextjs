@@ -83,6 +83,7 @@ function page() {
                   <th scope="col">Title</th>
                   <th scope="col">Description</th>
                   <th scope="col">Price</th>
+                  <th scope="col">Contact</th>
                   <th scope="col">Location Url</th>
                   <th scope="col">Delete</th>
                   <th scope="col">Edit</th>
@@ -102,6 +103,7 @@ function page() {
                             <td>{singleProp.title.substring(0,20)+"..."}</td>
                             <td>{singleProp.description.substring(0,25)+"..."}</td>
                             <td>{singleProp.price}</td>
+                            <td>{singleProp.contact}</td>
                             <td><Link href={singleProp?.location_url} target="_blank" className="text-primary">{singleProp?.location_name.substring(0,10)+"..."}</Link></td>
                             <td>
                               <button className="unBtn smBtn bg-danger" onClick={(e) => deletePropertyHandler(e, singleProp._id)}>Del</button>

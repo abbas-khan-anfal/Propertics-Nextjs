@@ -15,6 +15,7 @@ function page({params}) {
     const [price, setPrice] = useState("");
     const [locationName, setLocationName] = useState("");
     const [locationUrl, setLocationUrl] = useState("");
+    const [contact, setContact] = useState("");
     const [loading, setLoading] = useState(true);
     const [formLoading, setFormLoading] = useState(false);
     const [singleProperty, setSingleProperty] = useState({});
@@ -31,6 +32,7 @@ function page({params}) {
         formData.append("price", price);
         formData.append("location_name", locationName);
         formData.append("location_url", locationUrl);
+        formData.append("contact", contact);
         if(files.length > 0)
         {
           for(let i = 0; i < files.length; i++)
@@ -71,6 +73,7 @@ function page({params}) {
           setPrice(response?.data?.property?.price || "");
           setLocationName(response?.data?.property?.location_name || "");
           setLocationUrl(response?.data?.property?.location_url || "");
+          setContact(response?.data?.property?.contact || "");
         }
         catch(error)
         {
@@ -131,11 +134,19 @@ function page({params}) {
                     </label>
                     <input type="text" className="inputField" id="location" onChange={e => setLocationName(e.target.value)} value={locationName} required />
                   </div>
+                  
                   <div className="mb-3">
-                    <label htmlFor="location" className="label">
+                    <label htmlFor="number" className="label">
+                      Contact Number
+                    </label>
+                    <input type="text" className="inputField" id="number" onChange={e => setContact(e.target.value)} value={contact} required />
+                  </div>
+
+                  <div className="mb-3">
+                    <label htmlFor="locationUrl" className="label">
                       Location url <mark>https://example_city_url.com</mark>
                     </label>
-                    <input type="text" className="inputField" id="location" onChange={e => setLocationUrl(e.target.value)} value={locationUrl} required />
+                    <input type="text" className="inputField" id="locationUrl" onChange={e => setLocationUrl(e.target.value)} value={locationUrl} required />
                   </div>
                 <div className="mb-3">
                   <label htmlFor="image" className="label">
